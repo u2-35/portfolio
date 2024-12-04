@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="フリーでWEBデザイナー・コーダーを目指すU235のポートフォリオ。">
+    <title>U235 Portfolio</title>
+    <!-- RESS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/intersection-observer.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class ="logo" href="index.html">U235</a>
+            <nav>
+                <ul class="gnav-list">
+                    <li class="sp"><a href="index.html">Top</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#works">Works</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="sp menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="works-detail">
+            <div class="wrapper">
+                <h2>Works Detail</h2>
+                <div class="work-top">
+                    <img src="img/website4.png" alt="Camellia Tea Café">
+                </div>
+                <div class="work-container">
+                    <div class="content show">
+                        <div class="work-title">
+                            <h3>Camellia Tea Café（架空）</h3>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>URL</p>
+                            </div>
+                            <div class="work-letter">
+                                <a class="work-url" href="https://u2-35.github.io/camellia-tea-cafe/" target="_blank">https://u2-35.github.io/camellia-tea-cafe/</a>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>概要</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>Camellia Tea Caféは、紅茶と焼き菓子にこだわった架空のカフェのホームページです。</p>
+                                <p>本書「1冊ですべて身につくHTML & CSSとWebデザイン入門講座」の課題として制作したものをベースに、デザインやテキストをオリジナルに調整しました。</p>
+                                <p>レスポンシブデザインを採用し、PCだけでなく、タブレット、スマートフォンでも快適に閲覧できる構造になっています。</p>
+                                <p>オリジナルロゴを作成し、全体的に温かみのあるデザインを基調としてカフェのイメージを統一できるように工夫しています。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>ターゲット</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>このサイトは、紅茶や焼き菓子が好きな20～30代の女性を主なターゲットに想定しています。</p>
+                                <p>カフェのこだわりやメニュー、営業時間といった基本情報を掲載し、訪問を検討しているユーザーがスムーズに情報を得られるようデザインされています。</p>
+                                <p>また、ブログ形式のお知らせページを設け、カフェの最新情報を発信することでリピーターを増やすことも意識しています。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>目的</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>カフェのコンセプトや雰囲気を視覚的に伝えることで、新規顧客の興味を引き付ける。</p>
+                                <p>紅茶や焼き菓子などの商品情報を提供し、訪問意欲を高める。</p>
+                                <p>お知らせや最新情報を通じて、来店を促すシーズナルキャンペーンやイベント情報を発信する。</p>
+                                <p>カフェへのアクセス情報や連絡先を明示し、顧客の訪問を容易にする。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>情報設計</p>
+                            </div>
+                            <div class="work-letter">
+                                <dl>
+                                    <dt>トップページ</dt>
+                                    <dd>カフェの雰囲気や魅力を直感的に伝えるビジュアルを配置しました。画像のオーバーレイ効果を用い、優しいトーンを演出しています。</dd>
+                                    <dt>メニューページ</dt>
+                                    <dd>紅茶や焼菓子のメニューを写真付きで掲載しています。flex-gridを使用してレスポンシブ対応し、どんな端末でも見やすいようにしています。</dd>
+                                    <dt>お知らせページ</dt>
+                                    <dd>ブログ形式で最新情報を掲載しています。例えば、お店の紹介や期間限定メニュー、イベント情報などを発信する場として想定しました。</dd>
+                                    <dt>コンタクトページ</dt>
+                                    <dd>アクセス情報や営業時間、SNSリンクなどをまとめています。フォームからのお問い合わせも可能です。</dd>
+                                  </dl>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>制作期間</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>コーディング：3日間</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>使用ツール</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>Visual Studio Code / Figma（ロゴ・バナー作成）</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>使用言語</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>HTML5 / CSS3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="work-completed">
+                        <h3>完成デザイン</h3>
+                        <h4>トップページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website4-pc1.jpg" alt="Camellia Tea CaféPCサイトのトップページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website4-sp1.jpg" alt="Camellia Tea Caféモバイルサイトのトップページのスクリーンショット">
+                        </div>
+                        <h4>メニューページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website4-pc2.jpg" alt="Camellia Tea CaféPCサイトのメニューページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website4-sp2.jpg" alt="Camellia Tea Caféモバイルサイトのメニューページのスクリーンショット">
+                        </div>
+                        <h4>ニュースページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website4-pc3.jpg" alt="Camellia Tea CaféPCサイトのニュースページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website4-sp3.jpg" alt="Camellia Tea Caféモバイルサイトのニュースページのスクリーンショット">
+                        </div>
+                        <h4>コンタクトページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website4-pc4.jpg" alt="Camellia Tea CaféPCサイトのコンタクトページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website4-sp4.jpg" alt="Camellia Tea Caféモバイルサイトのコンタクトページのスクリーンショット">
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="work-completed">
+                        <h3>その他作成したもの</h3>
+                        <div class="website4-extra">
+                            <div class="website4-logo">
+                                <h4>ロゴ</h4>
+                                <img src="img/website4-logo.svg" alt="Camellia Tea Caféのロゴ">
+                            </div>
+                            <div class="website4-banner">
+                                <h4>バナー</h4>
+                                <img src="img/website4-banner.jpg" alt="Camellia Tea Caféのバナー">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="works-contact">
+                        <h3>Please Contact Me!</h3>
+                        <a class="works-contact-button" href="index.html#contact">お問い合わせはこちら</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small class="footer">© 2024 U235 All Rights Reserved.</small>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/script.js"></script>
+    <script>
+        $('a[href^="index.html#"]').on('click', function (e) {
+    e.preventDefault();  // 通常のリンク遷移を防ぐ
+    const href = $(this).attr('href');
+    const hash = href.split('#')[1];  // #contactなどのハッシュを取得
+
+    if (hash) {
+        console.log("Navigating to:", href);
+        window.location.href = href; // ページ遷移
+        setTimeout(() => {
+            window.location.hash = `#${hash}`;  // ページ遷移後にハッシュを設定
+        }, 10); // 少し遅延させてからハッシュを設定
+    }
+});
+    </script>
+</body>
+</html>

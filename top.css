@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.box {
+    scroll-snap-align: start;
+    height: 100dvh;
+    width: 100%;
+}
+
+footer {
+    scroll-snap-align: end;
+}

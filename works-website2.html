@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="フリーでWEBデザイナー・コーダーを目指すU235のポートフォリオ。">
+    <title>U235 Portfolio</title>
+    <!-- RESS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/intersection-observer.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class ="logo" href="index.html">U235</a>
+            <nav>
+                <ul class="gnav-list">
+                    <li class="sp"><a href="index.html">Top</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#works">Works</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="sp menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="works-detail">
+            <div class="wrapper">
+                <h2>Works Detail</h2>
+                <div class="work-top">
+                    <img src="img/website2.png" alt="CO-WORKING">
+                </div>
+                <div class="work-container">
+                    <div class="content show">
+                        <div class="work-title">
+                            <h3>The Annex.（架空）</h3>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>URL</p>
+                            </div>
+                            <div class="work-letter">
+                                <a class="work-url" href="https://u235xx.wixsite.com/my-site-4" target="_blank">https://u235xx.wixsite.com/my-site-4</a>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>概要</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>架空のコワーキングスペースを提供する企業であるThe Annex.のホームページを作成しました。</p>
+                                <p>本サイトはトップページに各セクションを配置し、ヘッダーのアンカーリンクで迅速に目的の情報へアクセスできる構造が特徴です。</p>
+                                <p>ギャラリーや予約機能も実装されており、利用者がスペースの詳細を確認し、そのまま予約まで行える利便性を備えています。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>ターゲット</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>個人事業主やフリーランス・リモートワークの方で、自宅以外で集中して作業できるスペースを求めている方。Wi-Fiや下位的な環境が整ったワークスペースを必要とする方。</p>
+                                <p>スタートアップ企業やコミュニティ志向の方で、小規模なミーティングやイベントができるスペースを探している方。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>目的</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>コワーキングスペースの情報を簡単に閲覧でき、予約機能によりその場で手続きができることで、利用しやすくなる。</p>
+                                <p>専用特典などの会員機能の魅力をわかりやすく説明することでリピーターを増やす。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>情報設計</p>
+                            </div>
+                            <div class="work-letter">
+                                <dl>
+                                    <dt>トップページ</dt>
+                                    <dd>各セクション（About Us、Community、Spaces、Membership、Contact）を配置し、スムーズなナビゲーションを実現しています。</dd>
+                                    <dd>動きのあるデザイン（テキストアニメーションやホバーエフェクト）を取り入れ、視覚的に印象に残るようにしています。</dd>
+                                    <dd>ギャラリー機能により、コワーキングスペース内での活動やイベントの写真を掲載し、活気ある雰囲気を伝えることができます。</dd>
+                                    <dd>WIXの予約機能が実装されており、利用者は予約がしやすく、運営側はその管理がしやすくなっています。</dd>
+                                    <dd>他にもWIXのチャット機能やお問い合わせフォームが実装されており、利用者とのコミュニケーションが円滑に取れるようになっています。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>制作期間</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>ノーコードツールWIX：3日</p>
+                                <p>（デザインはスクールから提供）</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>使用ツール</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>WIX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="work-completed">
+                        <h3>完成デザイン</h3>
+                        <h4>トップページ</h4>
+                        <div class="work-design">
+                                <img class="work-design-pc" src="img/website2-pc1.jpg" alt="CO-WORKINGのトップページのスクリーンショット">
+                                <img class="work-design-sp" src="img/website2-sp1.jpg" alt="CO-WORKINGのトップページのスクリーンショット">
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="works-contact">
+                        <h3>Please Contact Me!</h3>
+                        <a class="works-contact-button" href="index.html#contact">お問い合わせはこちら</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small class="footer">© 2024 U235 All Rights Reserved.</small>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/script.js"></script>
+</body>
+</html>

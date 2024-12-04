@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="フリーでWEBデザイナー・コーダーを目指すU235のポートフォリオ。">
+    <title>U235 Portfolio</title>
+    <!-- RESS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/intersection-observer.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class ="logo" href="index.html">U235</a>
+            <nav>
+                <ul class="gnav-list">
+                    <li class="sp"><a href="index.html">Top</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#works">Works</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="sp menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="works-detail">
+            <div class="wrapper">
+                <h2>Works Detail</h2>
+                <div class="work-top">
+                    <img src="img/website5.png" alt="五反田歯科医院">
+                </div>
+                <div class="work-container">
+                    <div class="content show">
+                        <div class="work-title">
+                            <h3>五反田歯科医院（架空）</h3>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>URL</p>
+                            </div>
+                            <div class="work-letter">
+                                <a class="work-url" href="https://u2-35.github.io/gotanda-dental/" target="_blank">https://u2-35.github.io/gotanda-dental/</a>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>概要</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>架空の歯科医院である五反田歯科医院のホームページを作成しました。</p>
+                                <p>スクールでの学習で、Figmaを使ってワイヤーフレーム作成、プロトタイプ作成、デザイン模写を行いました。その後は独自でコーディングを行い、デザインからコーディングまでを通じて制作しました。</p>
+                                <p>特に、レスポンシブ対応や適切なHTML構造を意識し、実践的なスキルを習得することを目的としています。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>ターゲット</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>地域に住む、この歯科医院の利用を考えている方、あるいは通っている方。</p>
+                                <p>初めての利用でも安心感を持ちたいと思う方。</p>
+                                <p>予約や診療内容をオンラインで確認したい方。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>目的</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>地域の患者に信頼感と安心感を与えるため、医院の特徴や診療科目をわかりやすく伝える。</p>
+                                <p>初めての患者でも受診の流れをイメージしやすくし、来院の敷居を下げる。</p>
+                                <p>オンライン予約やアクセス情報を提供し、利便性を向上させることで、患者のスムーズな来院をサポートする。</p>
+                                <p>医院の親しみやすさを伝え、リピーターとしての定着を促す。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>情報設計</p>
+                            </div>
+                            <div class="work-letter">
+                                <dl>
+                                    <dt>トップページ</dt>
+                                    <dd>医院の特徴や治療のポリシー、お知らせを簡潔にまとめ、医院の特色がわかるようなビジュアルとメッセージを配置しています。</dd>
+                                    <dt>診療案内ページ</dt>
+                                    <dd>診療科目ごとの詳細情報を掲載しています。ページトップには各診療内容にジャンプするボタンが設置されており、画面の右下にはトップへ戻るボタンがあるため、必要な情報が複数あってもスムーズに対応できるような構成にしています。</dd>
+                                    <dt>スタッフ紹介ページ</dt>
+                                    <dd>院長の経歴や所属学会などをわかりやすく提示することで、安心感や信頼感を与えることを意識したデザインとなっています。</dd>
+                                    <dt>アクセス・診療時間ページ</dt>
+                                    <dd>アクセス情報はGoogleMapを埋め込み、簡潔にわかりやすい構成になっています。</dd>
+                                    <dt>お知らせページ</dt>
+                                    <dd>新着情報を更新していくページです。こちらに入力した上部3つの内容が、トップページに自動で表示されるようにしています。</dd>
+                                    <dt>WEB予約ページ</dt>
+                                    <dd>フォームを用い、WEBで予約できるようにしています。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>制作期間</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>ワイヤーフレーム作成・プロトタイプ作成・デザイン（トレース）：3日</p>
+                                <p>コーディング：1週間</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>使用ツール</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>Figma / Visual Studio Code</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>使用言語</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>HTML5 / CSS3 / JavaScript（jQuery）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="work-completed">
+                        <h3>完成デザイン</h3>
+                        <h4>トップページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website5-pc1.jpg" alt="五反田歯科医院PCサイトのトップページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website5-sp1.jpg" alt="五反田歯科医院モバイルサイトのトップページのスクリーンショット">
+                        </div>
+                        <h4>診療案内ページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website5-pc2.jpg" alt="五反田歯科医院PCサイトの診療案内ページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website5-sp2.jpg" alt="五反田歯科医院モバイルサイトの診療案内ページのスクリーンショット">
+                        </div>
+                        <h4>スタッフ紹介ページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website5-pc3.jpg" alt="五反田歯科医院PCサイトのスタッフ紹介ページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website5-sp3.jpg" alt="五反田歯科医院モバイルサイトのスタッフ紹介ページのスクリーンショット">
+                        </div>
+                        <h4>アクセス・診療時間ページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website5-pc4.jpg" alt="五反田歯科医院PCサイトのアクセス・診療案内ページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website5-sp4.jpg" alt="五反田歯科医院モバイルサイトのアクセス・診療案内ページのスクリーンショット">
+                        </div>
+                        <h4>お知らせページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website5-pc5.jpg" alt="五反田歯科医院PCサイトのお知らせページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website5-sp5.jpg" alt="五反田歯科医院モバイルサイトのお知らせページのスクリーンショット">
+                        </div>
+                        <h4>WEB予約ページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website5-pc6.jpg" alt="五反田歯科医院PCサイトのWEB予約ページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website5-sp6.jpg" alt="五反田歯科医院モバイルサイトのWEB予約ページのスクリーンショット">
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="works-contact">
+                        <h3>Please Contact Me!</h3>
+                        <a class="works-contact-button" href="index.html#contact">お問い合わせはこちら</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small class="footer">© 2024 U235 All Rights Reserved.</small>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/script.js"></script>
+    <script>
+        $('a[href^="index.html#"]').on('click', function (e) {
+    e.preventDefault();  // 通常のリンク遷移を防ぐ
+    const href = $(this).attr('href');
+    const hash = href.split('#')[1];  // #contactなどのハッシュを取得
+
+    if (hash) {
+        console.log("Navigating to:", href);
+        window.location.href = href; // ページ遷移
+        setTimeout(() => {
+            window.location.hash = `#${hash}`;  // ページ遷移後にハッシュを設定
+        }, 10); // 少し遅延させてからハッシュを設定
+    }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="フリーでWEBデザイナー・コーダーを目指すU235のポートフォリオ。">
+    <title>U235 Portfolio</title>
+    <!-- RESS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/intersection-observer.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class ="logo" href="index.html">U235</a>
+            <nav>
+                <ul class="gnav-list">
+                    <li class="sp"><a href="index.html">Top</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#works">Works</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="sp menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="works-detail">
+            <div class="wrapper">
+                <h2>Works Detail</h2>
+                <div class="work-top">
+                    <img src="img/website7.png" alt="U235のポートフォリオ">
+                </div>
+                <div class="work-container">
+                    <div class="content show">
+                        <div class="work-title">
+                            <h3>U235のポートフォリオ</h3>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>URL</p>
+                            </div>
+                            <div class="work-letter">
+                                <a class="work-url" href="https://u2-35.github.io/portfolio/" target="_blank">https://u2-35.github.io/portfolio/</a>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>概要</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>働きながら「WEBCOACH」でWebデザインやコーディングを学んでいる私自身のポートフォリオサイトです。</p>
+                                <p>将来的には在宅での仕事を目指し、クライアントに向けた自己紹介と実績の発信、仕事の依頼につなげることを目的としています。</p>
+                                <p>デザイン・コーディングは完全オリジナルで制作しました。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>ターゲット</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>Webデザインやコーディングの依頼を検討している企業様や個人事業主様。副業やフリーランスでの活動を想定したクライアント様が主な対象です。</p>
+                                <p>他にも、同業者様やパートナーとして協業する可能性があるWeb制作会社様やエージェント様も対象としています。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>目的</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>自己紹介として、自分のスキルや経歴をわかりやすく伝える。</p>
+                                <p>実績紹介として、過去の制作物を掲示し、スキルや成果を具体的にアピールする。</p>
+                                <p>お問い合わせフォームを設置し、サイトを通じてクライアント様から仕事の依頼や相談を受けられる仕組みを確立する。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>情報設計</p>
+                            </div>
+                            <div class="work-letter">
+                                <dl>
+                                    <dt>トップページ</dt>
+                                    <dd>スナップスクロールで1画面ごとに切り替わる、4つのセクションの構成となっています。</dd>
+                                    <dd>各セクションで異なるベースカラー（青・赤・緑・黄）を採用し、スナップスクロールでの切り替え時にわかりやすさを重視しています。カラフルで楽しいデザインでありながら、落ち着いた色調を採用することで親しみやすい雰囲気を演出しています。</dd>
+                                    <dd>また、黒猫のキャラクターにアニメーションを取り入れ、閲覧者様に楽しさと記憶に残る印象を与えることを意識しました。</dd>
+                                    <dt>メインビジュアル</dt>
+                                    <dd>シンプルなデザインにしていますが、U235のポートフォリオサイトであることと、キャッチコピーよりWEBデザインとコーディングをメインに行っていることを伝える意図があります。</dd>
+                                    <dt>Aboutセクション</dt>
+                                    <dd>自己紹介として、プロフィール、スキル、経歴、メッセージを4つのタブで分けて表示させています。</dd>
+                                    <dt>Worksセクション</dt>
+                                    <dd>制作物をカテゴリ別（Webサイト、グラフィック、その他）に4つのタブで分けて表示させています。制作物をクリックすると、制作物の詳細ページへ移動するようになっています。</dd>
+                                    <dt>Contactセクション</dt>
+                                    <dd>Googleフォームを用いたお問い合わせフォームとなっています。</dd>
+                                    <dt>作品詳細ページ</dt>
+                                    <dd>制作物ごとに、以下の要素を掲載しています。</dd>
+                                    <dd>モックアップ：作品を一目で把握できるビジュアルです。</dd>
+                                    <dd>詳細情報：タイトルやURL、概要、ターゲット、目的、情報設計、制作期間、使用ツール・言語などを載せています。どのような手順で、どんな特徴をどのように表現したのかといった、制作の意図をお伝えすることで、より制作物の魅力を知ってもらえると思います。</dd>
+                                    <dd>他にも、WEBサイトであれば完成デザインや、ロゴやバナーなどの付随した制作物を追加で掲載しています。</dd>
+                                    <dt>その他</dt>
+                                    <dd>お問い合わせフォームはGoogleフォームをサイト内に組み込んでおり、内容を確認・管理しやすくなっています。</dd>
+                                    <dd>メイン構成外ですが、フォーム送信後のサンクスページも作成しております。</dd>
+                                  </dl>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>制作期間</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>ワイヤーフレーム作成・プロトタイプ作成・デザイン：2日</p>
+                                <p>コーディング：2週間</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>使用ツール</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>Figma / Visual Studio Code</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>使用言語</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>HTML5 / CSS3 / JavaScript（jQuery） / Googleフォーム</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="work-completed">
+                        <h3>完成デザイン</h3>
+                        <h4>トップページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website7-pc1.jpg" alt="U235のポートフォリオPCサイトのトップページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website7-sp1.jpg" alt="U235のポートフォリオモバイルサイトのトップページのスクリーンショット">
+                        </div>
+                    </div>
+                    <div class="work-container">
+                        <div class="work-completed">
+                            <h3>その他作成したもの</h3>
+                            <div class="website7-extra">
+                                <h4>イラスト</h4>
+                                <div class="website7-illustration">
+                                    <img src="img/main-cat.png" alt="U235のポートフォリオのメインビジュアルにいる黒猫">
+                                    <img src="img/prof-cat.png" alt="U235のポートフォリオのプロフィールにいる黒猫">
+                                    <img src="img/message-bg.png" alt="U235のポートフォリオのメッセージにいる猫の足跡">
+                                    <img src="img/contact-cat.png" alt="U235のポートフォリオのコンタクトにいる黒猫">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="works-contact">
+                        <h3>Please Contact Me!</h3>
+                        <a class="works-contact-button" href="index.html#contact">お問い合わせはこちら</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small class="footer">© 2024 U235 All Rights Reserved.</small>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/script.js"></script>
+    <script>
+        $('a[href^="index.html#"]').on('click', function (e) {
+    e.preventDefault();  // 通常のリンク遷移を防ぐ
+    const href = $(this).attr('href');
+    const hash = href.split('#')[1];  // #contactなどのハッシュを取得
+
+    if (hash) {
+        console.log("Navigating to:", href);
+        window.location.href = href; // ページ遷移
+        setTimeout(() => {
+            window.location.hash = `#${hash}`;  // ページ遷移後にハッシュを設定
+        }, 10); // 少し遅延させてからハッシュを設定
+    }
+});
+    </script>
+</body>
+</html>

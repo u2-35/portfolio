@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="フリーでWEBデザイナー・コーダーを目指すU235のポートフォリオ。">
+    <title>U235 Portfolio</title>
+    <!-- RESS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/intersection-observer.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class ="logo" href="index.html">U235</a>
+            <nav>
+                <ul class="gnav-list">
+                    <li class="sp"><a href="index.html">Top</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#works">Works</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="sp menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="works-detail">
+            <div class="wrapper">
+                <h2>Works Detail</h2>
+                <div class="work-top">
+                    <img src="img/website6.png" alt="五反田歯科医院ホワイトニングLP">
+                </div>
+                <div class="work-container">
+                    <div class="content show">
+                        <div class="work-title">
+                            <h3>五反田歯科医院 ホワイトニングLP（架空）</h3>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>概要</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>架空の歯科医院である五反田歯科医院のホワイトニングサービスのLPを作成しました。</p>
+                                <p>「白い歯で、新しい自分を発見。」をキャッチコピーに、歯科医院ならではのプロフェッショナルなホワイトニングサービスを紹介しています。</p>
+                                <p>デザインはスクールから提供され、Figmaでトレースしたものです。水色と白を基調に、清潔感と安心感を感じさせるデザインとなっています。オンライン予約を促進するための構成とビジュアルが工夫されています。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>ターゲット</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>ホワイトニングに興味があるが、施術を受けるのに不安がある方。プロの技術・安全性を重視する方。短期間で確実な結果を求めている方。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>目的</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>歯科医院によるホワイトニングの信頼性と安全性をアピールする。</p>
+                                <p>オンライン予約を通じて実際の来院につなげる。</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>情報設計</p>
+                            </div>
+                            <div class="work-letter">
+                                <dl>
+                                    <dt>メインビジュアル</dt>
+                                    <dd>キャッチコピー「白い歯で、新しい自分を発見。」と「歯科医院だからできるホワイトニング 料金15,000円から」の文言が目を引くセクションです。バナーと同様のデザインで、広告からページ遷移した場合でも、広告と同じ内容のLPに遷移したことがわかりやすくなっています。そうでない場合も、メインビジュアルが広告のデザインと同様であることで、興味を引かれるデザインとなっています。</dd>
+                                    <dd>歯が白くなったことで自分に自信を持ち、笑顔になれることを想定したビジュアルとなっています。</dd>
+                                    <dt>悩みからの訴求セクション</dt>
+                                    <dd>「歯の黄ばみが気になる」「笑顔に自信が持てない」などの悩みを挙げ、ホワイトニングの必要性を訴求します。</dd>
+                                    <dt>ホワイトニングの特長説明</dt>
+                                    <dd>「歯科医院だからできるホワイトニング」として、効果的で安全な施術内容を具体的に紹介します。</dd>
+                                    <dt>料金案内と予約セクション</dt>
+                                    <dd>3つの料金プランの詳細を明示しています。また、その次にピンクのオンライン予約ボタンで行動を促します。予約ボタンのみピンク色の配色になっており目立っています。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>制作期間</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>ワイヤーフレーム作成・デザイン：3日</p>
+                                <p>（デザインはスクールから提供あり、忠実に再現することでFigmaの操作スキルとデザイン理解を深めることを目的としています。）</p>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-label">
+                                <p>使用ツール</p>
+                            </div>
+                            <div class="work-letter">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="work-completed">
+                        <h3>完成デザイン</h3>
+                        <h4>トップページ</h4>
+                        <div class="work-design">
+                            <img class="work-design-pc" src="img/website6-pc1.jpg" alt="U235のポートフォリオPCサイトのトップページのスクリーンショット">
+                            <img class="work-design-sp" src="img/website6-sp1.jpg" alt="U235のポートフォリオモバイルサイトのトップページのスクリーンショット">
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container">
+                    <div class="works-contact">
+                        <h3>Please Contact Me!</h3>
+                        <a class="works-contact-button" href="index.html#contact">お問い合わせはこちら</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small class="footer">© 2024 U235 All Rights Reserved.</small>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/script.js"></script>
+    <script>
+        $('a[href^="index.html#"]').on('click', function (e) {
+    e.preventDefault();  // 通常のリンク遷移を防ぐ
+    const href = $(this).attr('href');
+    const hash = href.split('#')[1];  // #contactなどのハッシュを取得
+
+    if (hash) {
+        console.log("Navigating to:", href);
+        window.location.href = href; // ページ遷移
+        setTimeout(() => {
+            window.location.hash = `#${hash}`;  // ページ遷移後にハッシュを設定
+        }, 10); // 少し遅延させてからハッシュを設定
+    }
+});
+    </script>
+</body>
+</html>
