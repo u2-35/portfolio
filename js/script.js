@@ -48,16 +48,21 @@ $(function() {
     ////////// スムーススクロール
     // ページ内リンクのスムーススクロール
     $('a[href^="#"]').on('click', function (event) {
-        event.preventDefault();
-        const targetId = $(this).attr('href');
-        const targetElement = $(targetId);
+        event.preventDefault();  
+        const targetId = $(this).attr('href');  
+        const targetElement = $(targetId);  
+    
         if (targetElement.length) {
             const offset = targetElement.offset().top;
+    
             // スナップスクロールを無効化
             $('html, body').css('scroll-snap-type', 'none');
+    
             $('html, body').animate({ scrollTop: offset }, 600, function () {
-                // スムーススクロール後にスナップスクロールを再度有効化
-                $('html, body').css('scroll-snap-type', 'y mandatory');
+                // スクロール終了後にスナップスクロールを再度有効化
+                setTimeout(() => {
+                    $('html, body').css('scroll-snap-type', 'y mandatory');
+                }, 100); // 少し遅延を入れて安定させる
             });
         }
     });
@@ -82,7 +87,7 @@ $(function() {
                         $('html, body').css('scroll-snap-type', 'y mandatory');
                     });
                 }
-            }, 300); // 少し遅延させてスクロール処理を実行
+            }, 100); // 少し遅延させてスクロール処理を実行
         }
     });
     //////////
@@ -159,6 +164,15 @@ $(function() {
         }
     });
     //////////
-  
+
+    ////////// iOSでハッシュリンクを踏んだ時に1回でページ遷移するようにする
+    document.querySelectorAll('a[href^="index.html#"]').forEach(anchor => {
+        anchor.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').split('#')[1];
+            window.location.href = `index.html#${targetId}`;
+        });
+    });
+    //////////
 
 });

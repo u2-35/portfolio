@@ -14,15 +14,9 @@
 }
 
 /* 共通 */
-html {
-    height: 100%;
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Zen Maru Gothic", sans-serif;
     line-height: 1.8;
-    height: 100%;
     color: var(--black);
 }
 
@@ -97,7 +91,6 @@ a:hover {
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
 
 .content.show {
     display: block;
@@ -880,6 +873,10 @@ textarea.c-form-input {
 @media screen and (max-width: 700px) {
     html {
         font-size: 14px;
+    }
+
+    a:hover {
+        opacity: 1;
     }
     
     h2 {
