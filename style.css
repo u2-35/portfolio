@@ -32,10 +32,10 @@ a:hover {
 
 .container {
     background-color: white;
-    height: 60vh;
-    border-radius: 50px;
+    height: 70vh;
+    border-radius: 30px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 40px;
     overflow: auto;
 }
 
@@ -49,9 +49,10 @@ a:hover {
 
 .content-menu {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
-    flex-direction: column;
-    padding: 0 64px;
+    padding: 0 40px;
 }
 
 .cnav-list {
@@ -443,34 +444,6 @@ footer {
     background: linear-gradient(to bottom, #6fa15c 50%, #6fa15c);
 }
 
-#works .wrapper {
-    position: relative;
-}
-
-.more-button {
-    position: absolute;
-    bottom: -20px;
-    right: 10%;
-    padding: 0.5rem 2rem;
-    background-color: #DFC69D;
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: var(--rubik);
-    font-weight: 800;
-    border: none;
-    border-radius: 2rem;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    animation: float 3s infinite ease-in-out;
-}
-
-.more-button:hover {
-    background-color: #ff7f00;
-    transform: translatey(-3px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-}
-
 .work-list {
     display: flex;
     justify-content: space-between;
@@ -535,6 +508,103 @@ footer {
     font-size: var(--f7);
 }
 
+/* Blog */
+#blog {
+    background-color: #801e9e;
+}
+
+#blog .container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #c97ee0 50%, #c97ee0);
+}
+
+#blog h2 {
+    padding: 0 40px;
+}
+
+#blog p {
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+
+/* BlogItemのスタイル */
+.BlogItem {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.BlogItem_link {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+}
+
+/* サムネイル画像のスタイル */
+.BlogItem_thumbnail {
+    margin-right: 20px;
+}
+
+.BlogItem_thumbnail img {
+    width: 150px;
+    height: auto;      /* 高さは自動で調整 */
+    object-fit: contain;  /* 比率を保ったまま画像を収める */
+    display: block;
+}
+
+/* 記事タイトルとメタ情報のスタイル */
+.BlogItem_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.BlogItem_meta {
+    font-size: var(--f7);
+    color: #777;
+    margin-left: 20px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.BlogItem_category, .BlogItem_date {
+    margin-bottom: 5px;
+}
+
+/* カテゴリのスタイル */
+.BlogItem_category span {
+    display: inline-block;
+    background-color: #c97ee0;
+    color: #fff; /* 文字色は白 */
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: var(--f7);
+    margin-right: 10px;
+}
+
+.blog-button {
+    text-align: center;
+}
+
+.more-button {
+    padding: 0.5rem 2rem;
+    background-color: #c97ee0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: var(--rubik);
+    font-weight: 500;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-button:hover {
+    background-color: #801e9e;
+}
 
 /* Contact */
 #contact {
@@ -546,11 +616,7 @@ footer {
 }
 
 #contact h2 {
-    padding: 0 64px;
-}
-
-#contact .container {
-    height: 65vh;
+    padding: 0 40px;
 }
 
 #contact p {
@@ -592,7 +658,7 @@ footer {
 	margin: 0 0 0 18px;
 }
 textarea.c-form-input {
-	height: 160px;
+	height: 200px;
 }
 .c-form-submit {
 	text-align: center;
@@ -896,10 +962,15 @@ textarea.c-form-input {
     }
 
     .container {
-        height: 65dvh;
+        height: 70dvh;
         padding: 40px 20px;
         border-radius: 0px;
         align-items: flex-start;
+    }
+
+    #blog .container,
+    #contact .container {
+        height: 75dvh;
     }
 
     .menu-btn {
@@ -947,6 +1018,8 @@ textarea.c-form-input {
     }
 
     .content-menu {
+        flex-direction: column;
+        align-items: normal;
         padding: 0 20px;
     }
 
@@ -999,6 +1072,27 @@ textarea.c-form-input {
 
     .skill-info {
         width: 100%;
+    }
+
+    .BlogItem_link {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BlogItem_thumbnail {
+        margin-right: 0;
+    }
+
+    .BlogItem_title {
+        width: auto;
+    }
+
+    .BlogItem_meta {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
     }
 
     .c-form-item {
